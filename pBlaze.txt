@@ -1,9 +1,9 @@
 ﻿
-; defino los registros en donde van a ir las salidas
+; defino los registros en donde van a ir las salidas-- define en numeros los puertos
 ; 
-CONSTANT control_listo ,  01      
-CONSTANT control_escribe, 02     
-CONSTANT control_lee,     03        
+CONSTANT control_listo ,  01     ; 
+CONSTANT control_escribe, 02     ;Van a la maquina
+CONSTANT control_lee,     03     ;   
 CONSTANT escribe_dato,    04       
 CONSTANT escribe_dir,     05      
 
