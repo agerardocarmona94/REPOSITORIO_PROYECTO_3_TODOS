@@ -32,7 +32,7 @@ module registros_salida(
     );
 	 
 	 // asigancion de las posiciones del bus de entrada
-	 wire rst_DIR, rst_DAT, rst_C_LI, rst_C_E, rst_C_LE;
+	 wire rst_C_LI, rst_C_E, rst_C_LE;
 	 
 	 assign rst_C_LI=rst  [0];
 	 assign rst_C_E= rst  [1];
@@ -96,9 +96,9 @@ module registros_salida(
 				3'b011 : contro_escribe<=1'b0;
 				default: 
 					begin
-						contro_listo<=  1'b1;
-						contro_lee <=   1'b1;
-						contro_escribe<=1'b1;
+						contro_listo<=  contro_listo;
+						contro_lee <=   contro_lee;
+						contro_escribe<=contro_escribe
 					end
 			endcase
 
