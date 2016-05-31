@@ -85,7 +85,7 @@ leer:   INPUT  s0, F_1
         
         INPUT  s6, H_21; segundos
         OUTPUT s6, escribe_dir
-        INPUT  s7, dat_dir_0 ;direccion 2 
+        INPUT  s7, dat_dir_2 ;direccion 0 
         OUTPUT s7, direccion
         OUTPUT s4, control_lee
         CALL     ciclo_listo 
@@ -99,21 +99,21 @@ leer:   INPUT  s0, F_1
         
         INPUT  s6, H_23; hora
         OUTPUT s6, escribe_dir
-        INPUT  s7, dat_dir_2 ;direccion 0
+        INPUT  s7, dat_dir_0 ;direccion 2
         OUTPUT s7, direccion
         OUTPUT s4, control_lee
         CALL     ciclo_listo 
         
         INPUT  s6, H_24; dia
         OUTPUT s6, escribe_dir
-        INPUT  s7, CUATRO;direccion 4
+        INPUT  s7, TRES;direccion 3
         OUTPUT s7, direccion
         OUTPUT s4, control_lee
         CALL     ciclo_listo 
         
         INPUT  s6, H_25; mes
         OUTPUT s6, escribe_dir
-        INPUT  s7, TRES;direccion 3
+        INPUT  s7, CUATRO;direccion 4
         OUTPUT s7, direccion
         OUTPUT s4, control_lee
         CALL     ciclo_listo 
